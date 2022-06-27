@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Signin</title>
+  <link rel="stylesheet" href="{{url_for('static',filename='css/signin.css')}}">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet"> 
+
+<div class="container">
+  <form method="post" action="/signin">
+    <p>Welcome</p>
+    {% if error %}  
+      <strong>Error</strong>: {{error}}<br>
+    {% endif %}
+    <input type="Name" placeholder="Name" name="name" required><br>
+    <input type="email" placeholder="Email" name="email" required><br>
+    <input type="password" placeholder="Password" name="password" required>
+    <br>
+    <input type="Confirm password" placeholder="Confirm Password" name="confirmp" required><br>
+    <input type="submit" value="Sign in"><br>
+    <a href="/login">Already a user? Sign in here.</a>
+  </form>
+
+  <div class="drops">
+    <div class="drop drop-1"></div>
+    <div class="drop drop-2"></div>
+    <div class="drop drop-3"></div>
+    <div class="drop drop-4"></div>
+    <div class="drop drop-5"></div>
+  </div>
+</div>
+<!-- partial -->
+  
+</body>
+</html>

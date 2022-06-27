@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Humans For Humanity</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="{{url_for('static',filename='css/home.css')}}">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<nav class="nav nav--left js-nav">
+ 
+</nav>
+
+<figure class="logo">
+  <img src="{{url_for('static',filename='header.png')}}">
+</figure>
+
+<nav class="nav nav--right">
+  <ul>
+    <li>
+      <a href="/login" ><span>Login</span></a>
+      
+    </li>
+    <li>
+       <a href="/signin" ><span>Register</span></a>
+    </li>
+  </ul>
+</nav>
+
+<div class="slider js-slider">
+  <div class="slider__inner js-slider__inner"></div>
+  
+  <div class="slide js-slide">
+    <div class="slide__content">
+      <figure class="slide__img js-slide__img">
+       
+        <img src="https://i.pinimg.com/564x/47/11/72/471172da8aa4e3a53c53b2821d123267.jpg">
+      </figure>
+       <figure class="slide__img js-slide__img">
+        <img src="https://i.pinimg.com/564x/fe/e5/af/fee5aff0f93440ce21f6d19fd68684f7.jpg">
+      </figure>
+    </div>
+    
+    <div class="slider__text js-slider__text">
+      <div class="slider__text-line js-slider__text-line"><div> Only</div></div>
+      <div class="slider__text-line js-slider__text-line"><div>Humans</div></div>
+      <div class="slider__text-line js-slider__text-line"><div>Can Protect</div></div>
+      <div class="slider__text-line js-slider__text-line"><div>Humanity</div></div>
+    </div>
+    
+  </div>
+</div>
+
+<div class="vert-text">
+  <span>
+    HumansForHumanity<br>
+  </span>
+</div>
+<!-- partial -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/99/three.min.js">
+  
+</script><script  src="{{url_for('static',filename='js/home.js')}}"></script>
+
+</body>
+</html>
